@@ -11,10 +11,6 @@ The universe of the Game of Life is an infinite two-dimensional orthogonal grid 
 
 The initial pattern constitutes the seed of the system. The first generation is created by applying the above rules simultaneously to every cell in the seed—births and deaths occur simultaneously, and the discrete moment at which this happens is sometimes called a tick (in other words, each generation is a pure function of the preceding one). The rules continue to be applied repeatedly to create further generations.
 
-### Challenge
-
-Implement a `next_tick` function that takes a 5x5 grid of cells represented as 25-element list of boolean values where true means `alive` and false means `dead` and returns a new list representing the next state of the grid (killing and reanimating cells accroding to the 4 rules above)
-
 ### Examples
 
 *Block:*
@@ -43,4 +39,8 @@ _ X X _ _  -(tick)->  _ X _ _ _  -(tick)->  _ X X _ _
 _ _ _ X X             _ _ _ _ X             _ _ _ X X
 _ _ _ X X             _ _ _ X X             _ _ _ X X
 ```
+
+### Challenge
+
+Implement a `next_tick` function that takes a 5x5 grid of cells and calculates the next state of the grid (killing and reanimating cells accroding to the 4 rules above). The grid will be represented as a 25-element list of boolean values where true means `alive` and false means `dead`. Tests are provided to help validate your result.
 
